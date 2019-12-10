@@ -83,7 +83,7 @@ def integrateTrapezio(f1, a, b, n):
 def integrateSimpson(f1, a, b, n):
     result = f1(a)+f1(b)
     h = (b-a)/n
-    for i in range(1, n+1):
+    for i in range(1, n):
         if(i%2 == 0):
             result += 2*f1(a+i*h)
         else:
